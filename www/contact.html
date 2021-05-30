@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="application.css">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+      <div class="topnav">
+             <div class = "logo">
+             <img src="/Assets/full_logo_white.png" alt ="full_logo_dark" height="52" width="150"> 
+             </div>
+
+                <div class = "navigation"> 
+                 <a align ="right" class="navigation-items" href="index.html">Accueil</a>
+                 <a align ="right"  class="navigation-items" href="about.html">Qui sommes-nous?</a>
+                <a align ="right"  class="navigation-items" href="contact.html">Nous contacter</a>
+                </div>
+      </div>
+    </header>
+
+    <section class = "about-image">  
+      
+      <!-- change it to contact-image class -->
+     
+      <div><img src="/Assets/logo_mrcoffee.png" class="body-logo" alt = "logo_mrcoffee" height="200" width="200" align = "center"></div>
+
+   <section>
+
+      <h1>Dites nous tout !</h1>
+
+      <form> 
+        
+          <div class = "form-group">
+
+               <label>Nom : *</label><br>
+               <input name = "name" class = ""/>
+               <div class = "error-hint hidden">your first name is required.</div>
+      
+          </div>
+
+          <div class = "form-group">
+
+            <label>Prénom *</label><br>
+            <input name = "lastname" class = ""/>
+            <div class = "error-hint hidden">your last name is required.</div>
+   
+          </div>
+
+          <div class = "form-group">
+
+            <label>Adresse mail *</label><br>
+            <input name = "email" class = ""/>
+            <div class = "error-hint hidden">your Email ID is Invalid.</div>
+   
+          </div>
+
+          <div class = "form-group">
+
+            <label>Téléphone</label><br>
+            <input name = "phone" class = ""/>
+            <div class = "error-hint hidden">your phone is invalid.</div>
+   
+          </div>
+
+          <div class = "form-group">
+
+            <label>Message</label><br>
+            <textarea name = "message" class = ""></textarea>
+            <div class = "error-hint hidden">your message is required.</div>
+   
+          </div>
+        
+
+    <button id = "open-popup">Envoyer</button>
+      </form>
+
+      <div class = "modal-container" id = "model_container">
+        <div class = "modal">
+          <h1>MERCI </h1>
+          <h2>Votre message a bien été envoyé !</h2>
+          <p>Nous essaierons d’y répondre au mieux dans les plus brefs
+            délais. À bientot chez Mr.Coffee</p>
+          <button id = "close">FERMER</button>
+      
+        </div>
+      
+      </div>
+
+
+      <div class = "thank-you hidden"> Thank you</div>
+
+
+
+   </section>
+
+   <div> <h1>On vous attend !</h1> </div>
+   
+   <div>
+       <p>
+        <b>Mr.Coffee
+        <br>15 place Jules Guesde
+        <br>75006 Paris
+       </p>
+       <p>
+        Tel : +33 9 46 25 78 45
+        <br>Mail : contact@mr-coffee.com
+       </p>
+   </div>
+
+   <div> <img src = "/Assets/carte_contact.png" class = "address" alt = "address">  </div>
+
+    </section>
+  
+<footer class="footer">
+  
+    <div class = "footerlogo">
+      <img src="/Assets/logo_blanc.png" class = "leftlogo" alt ="logo_dark"> 
+      </div>
+
+      <div class ="connect">
+        <div class = "followus">
+          <p>Suivez nous sur les réseaux sociaux !</p>
+        </div>
+        <div class="socialimage">
+          <img src="/Assets/logo_linkedin.png" class= "social" alt ="logo_dark">
+          <img src="/Assets/logo_facebook.png" class= "social" alt ="logo_dark">
+          <img src="/Assets/logo_twitter.png" class= "social" alt ="logo_dark">
+        </div>
+
+      </div>
+
+</footer>
+<script src = "form.js"></script>
+</body>
+</html>
